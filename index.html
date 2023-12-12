@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Hu</title>
+  <style>
+    @font-face {
+        font-family: 'Gaisyr';
+        src: url('fonts/ABCGaisyr-LightItalic.eot');
+        src: url('fonts/ABCGaisyr-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ABCGaisyr-LightItalic.woff2') format('woff2'),
+        url('fonts/ABCGaisyr-LightItalic.woff') format('woff'),
+        url('fonts/ABCGaisyr-LightItalic.ttf') format('truetype'),
+        url('fonts/ABCGaisyr-LightItalic.svg#ABCGaisyr-LightItalic') format('svg');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Monument';
+        src: url('fonts/ABCMonumentGrotesk-Medium.eot');
+        src: url('fonts/ABCMonumentGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ABCMonumentGrotesk-Medium-Trial.woff2') format('woff2'),
+        url('fonts/ABCMonumentGrotesk-Medium-Trial.woff') format('woff'),
+        url('fonts/ABCMonumentGrotesk-Medium.ttf') format('truetype'),
+        url('fonts/ABCMonumentGrotesk-Medium.svg') format('svg');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+
+    }
+
+    *{
+        margin: 0;
+        padding-top: 0;
+    }
+    body{
+            font-size: 58px;
+    }
+    h1, h2{
+        width: 100%;
+        text-align: center;
+    }
+    #container2{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 5;
+    }
+    h3{
+        top: 0;
+    }
+    h4{
+        display: flex;
+        justify-content: space-between;
+    }
+    h5{
+        display: flex;
+        flex-direction: column;
+    }
+    .serifa{
+        font-family: 'Gaisyr';
+    }
+    .sansserifa{
+        font-family: 'Monument';
+    }
+    #container1{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #container1, #container2{
+        position: fixed;
+        mix-blend-mode: difference;
+        
+
+    }
+    #h_1{
+        float: left;
+        padding: .1em;
+    }
+    #h_2{
+               
+    }
+    a:hover{
+        color: rgba(21, 255, 0, 0.612);
+    }
+   
+    #h_3{
+        padding-top: 5em;
+        margin-top: 0%;
+    }
+    #h_4{
+        float: left;
+        position: fixed;
+        z-index: 2;
+        top: ;
+    }
+    #h_5{
+        text-align: right;
+    }
+    @media screen and (max-width:1024px) {
+        body{
+            background-color: beige;
+        }
+    }
+    @media screen and (max-width:1000px) {
+        body{
+            background-color: aquamarine;
+        }
+    }
+    @media screen and (max-width:390px) {
+        body{
+            background-image: url(img/foto\ 2.png);
+        }
+    }
+  </style>
+</head>
+        <body>
+            <a>
+            <div id="container1">
+                <div class="serifa" id="h_1">
+                    <h1>Eric Hu</br>GIWYFY</h1>
+                </div>
+                <div  class="serifa" id="h_2">
+                    <h2>Virginia</br>Commonwealth</br>University</h2>
+                </div>
+            </div> 
+            <div id="container2">
+                <div class="sansserifa">
+                    <h3><span>Objects + Methods</span></br><span>Lecture Series</span></h3>
+                    <h4> <span>3/1 The Depot, 4:30pm</span><span>3/2 Workshop</span></h4>
+                    <h5><span>91780</span></h5>
+                    <h6><span>N16JP</span></h6>
+                    <h7><span>11222</span><span>H2V4G9</span></h7>
+                </div>
+            </div>
+        </a>
+        </body>
+</html>
